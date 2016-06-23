@@ -133,6 +133,7 @@
     {
       "comments": "# Storage Account",
       "name": "[variables('StorageAccountName')]",
+      "kind": "Storage",
       "type": "Microsoft.Storage/storageAccounts",
       "location": "[resourceGroup().location]",
       "apiVersion": "2016-01-01",
