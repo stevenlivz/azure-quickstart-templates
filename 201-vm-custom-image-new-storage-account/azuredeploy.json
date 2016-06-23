@@ -57,6 +57,30 @@
       "type": "string",
       "metadata": {
         "description": "Full URIs for one or more custom images (VHDs) that should be copied to the deployment storage account to spin up new VMs from them. URLs must be comma separated."
+      },
+    "virtualNetworkName": {
+      "type": "string",
+      "defaultValue": "vNet",
+      "metadata": {
+        "description": "The name of a new or existing VNet."
+      },
+    "vnetPrefix": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/16",
+      "metadata": {
+        "description": "Address space for the above VNET in CIDR format."
+      },
+    "vnetSubnetName1": {
+      "type": "string",
+      "defaultValue": "LabSubnet",
+      "metadata": {
+        "description": "Initial subnet that will be created in this vnet and host the new images below."
+      },
+    "vnetSubnetPrefix1": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/24",
+      "metadata": {
+        "description": "Address space for this subnet in CIDR format."
       }
     }
   },
