@@ -135,7 +135,7 @@
       "name": "[variables('StorageAccountName')]",
       "type": "Microsoft.Storage/storageAccounts",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-01-01",
       "dependsOn": [ ],
       "tags": {
         "displayName": "StorageAccount"
@@ -149,7 +149,7 @@
       "name": "[variables('VirtualNetworkName')]",
       "type": "Microsoft.Network/virtualNetworks",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-03-30",
       "tags": {
         "displayName": "vnet"
       },
@@ -174,7 +174,7 @@
       "name": "[variables('publicIpNames')[copyIndex()]]",
       "type": "Microsoft.Network/publicIPAddresses",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-03-30",
       "dependsOn": [ ],
       "copy": {
         "count": "[variables('vmCount')]",
@@ -192,7 +192,7 @@
       "name": "[variables('nicNames')[copyIndex()]]",
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[resourceGroup().location]",
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2016-03-30",
       "copy": {
         "count": "[variables('vmCount')]",
         "name": "nicCopy"
